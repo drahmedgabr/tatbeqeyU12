@@ -78,8 +78,56 @@ body {
     transition: 0.3s;
 }
 
-.header .container .menuDiv .menuIcon:hover .middleLine {
+.header .container .menuDiv:hover .middleLine {
     width: 100%;
+}
+
+.header .container .menuDiv .menuList {
+    width: 200px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    display: none;
+}
+
+.header .container .menuDiv .menuList::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+}
+
+.header .container .menuDiv .menuList li {
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.header .container .menuDiv .menuList li:hover {
+    padding-left: 20px;
+}
+
+.header .container .menuDiv .menuList .divider {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.709);
+}
+
+.header .container .menuDiv {
+    position: relative;
+    padding-right: 20px;
+}
+
+.header .container .menuDiv:hover .menuList {
+    display: block;
 }
 
 
