@@ -14,6 +14,18 @@ body {
     margin: 0;
 }
 
+.specialTitle {
+    font-size: 60px;
+    font-weight: 900;
+    color: #c5c5c5;
+}
+
+.specialParagraph {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
 .container {
     padding: 20px;
     margin-left: auto;
@@ -250,5 +262,36 @@ body {
 
 
 /* End Services */
+
+/* Start Stories */
+
+.stories {
+    background-color: #f6f6f6;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.stories .container {
+    text-align: center;
+}
+
+.stories .container .contents {
+    display: flex;
+}
+
+.stories .container .contents .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stories .container .contents .cards .card {
+    width: 230px;
+    box-shadow: 0 0 10px grey;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+/* End Stories */
 
 
