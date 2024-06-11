@@ -282,6 +282,7 @@ body {
 .stories .container .contents .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .stories .container .contents .cards .card {
@@ -289,6 +290,65 @@ body {
     box-shadow: 0 0 10px grey;
     margin: 10px;
     border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .stories .container .contents .cards .card {
+        width: 320px;
+        margin-bottom: 30px;
+    }
+}
+
+.stories .container .contents .cards .card .cardImg {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.stories .container .contents .cards .card .cardImg img {
+    width: 100px;
+}
+
+.stories .container .contents .cards .card .cardDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.stories .container .contents .cards .card .cardDetails p {
+    margin-top: 10px;
+}
+
+.stories .container .contents .imgDiv {
+    display: none;
+    align-items: center;
+    position: relative;
+}
+
+.stories .container .contents .imgDiv img {
+    width: 300px;
+    z-index: 1;
+}
+
+.stories .container .contents .imgDiv::before {
+    content: "";
+    width: 100px;
+    height: 80%;
+    background-color: #c5c5c5;
+    position: absolute;
+    right: 20px;
+}
+
+@media (min-width: 1200px) {
+    .stories .container .contents .imgDiv {
+        display: flex;
+    }
 }
 
 
