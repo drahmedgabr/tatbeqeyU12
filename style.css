@@ -354,4 +354,79 @@ body {
 
 /* End Stories */
 
+/* Start Contact */
+
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact .container {
+    text-align: center;
+}
+
+.contact .container .contents {
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact .container .contents .details h3 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.contact .container .contents .details p {
+    font-size: 22px;
+    color: #777;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.contact .container .contents .form {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.contact .container .contents .form input, textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline-color: #fa694e;
+    background-color: #f6f3f3;
+    font-size: 25px;
+}
+
+.contact .container .contents .form textarea {
+    resize: none;
+}
+
+.contact .container .contents .form .firstRow {
+    display: flex;
+}
+
+.contact .container .contents .form .firstRow input:nth-child(2) {
+    margin-left: 10px;
+}
+
+.contact .container .contents .form button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    background-color: #fa694e;
+    color: white;
+}
+
+.contact .container .contents .form button:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+/* End Contact */
+
 
