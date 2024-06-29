@@ -291,6 +291,11 @@ body {
     justify-content: space-around;
 }
 
+.stories .container .contents .cards a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 .stories .container .contents .cards .card {
     width: 230px;
     box-shadow: 0 0 10px grey;
